@@ -1,3 +1,25 @@
-.starter {
-  font-size: 18px;
+@import 'bulma/css/bulma.css';
+
+.App {
+  background-image: url(./images/fon.png);
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 100vh;
+  padding: 30px;
+
+  &__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    gap: 30px;
+
+    &_title {
+      color: yellow;
+    }
+
+    &_cities {
+      align-self: flex-start;
+    }
+  }
 }
