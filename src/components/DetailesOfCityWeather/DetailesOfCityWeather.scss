@@ -1,0 +1,43 @@
+
+.detailes {
+  background-color: #fff;
+
+  &__properties {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px;
+
+    &_info {
+      width: 50%;
+    }
+
+    &_property {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      &_characteristic {
+        font-weight: bold;
+      }
+
+      @media (max-width: 720px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &_image {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__time {
+    text-align: center;
+  }
+}

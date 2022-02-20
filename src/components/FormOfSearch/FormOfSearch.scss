@@ -1,0 +1,21 @@
+.form {
+  margin-bottom: 30px;
+
+  &__input {
+    width: 50vw;
+  }
+
+  &__error_hidden {
+    padding-top: 5px;
+
+    visibility: hidden;
+    color: #F00;
+  }
+
+  &__error_visible {
+    padding-top: 5px;
+
+    visibility: visible;
+    color: #F00;
+  }
+}
