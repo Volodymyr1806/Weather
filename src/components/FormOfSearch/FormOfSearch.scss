@@ -9,13 +9,14 @@
     padding-top: 5px;
 
     visibility: hidden;
-    color: #F00;
+    color: #ff0;
   }
 
   &__error_visible {
     padding-top: 5px;
+    padding-left: 10px;
 
     visibility: visible;
-    color: #F00;
+    color: #ff0;
   }
 }
