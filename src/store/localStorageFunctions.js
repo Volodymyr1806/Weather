@@ -1,3 +1,5 @@
+import { getWeatherOfCity } from '../api/api';
+
 export function saveToLocalStorage(state) {
   try {
     const serialisedState = JSON.stringify(state);
@@ -18,7 +20,15 @@ export function loadFromLocalStorage() {
       };
     }
 
-    return JSON.parse(serialisedState);
+    const savedState = JSON.parse(serialisedState);
+
+    savedState.cities.map(async(city) => {
+      const cityItem = await getWeatherOfCity(city.name);
+
+      return cityItem;
+    });
+
+    return savedState;
   } catch (e) {
     return {
       cities: [],
